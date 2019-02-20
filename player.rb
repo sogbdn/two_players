@@ -4,8 +4,8 @@ require_relative './question'
 
 class Player
 
-  attr_reader :number
-  attr_accessor :life
+  attr_reader :name
+  attr_accessor :life 
 
   def initialize(name)
     @name = name
@@ -15,7 +15,5 @@ class Player
   def decrease_life(life)
     @life = @life -life
   end
-
-
-   
+  
 end
